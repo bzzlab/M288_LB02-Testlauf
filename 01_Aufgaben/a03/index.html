@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+    <title>Währungsrechner - Funktionen</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/devisen.css">
+</head>
+<body>
+<main>
+    <section>
+        <h3>Currency I have</h3>
+        <p>
+            <input type="text" id="localAmount" size="15" value="15.0">
+            <select id="localExchange">
+                <option value="chf">CHF</option>
+            </select>
+        </p>
+    </section>
+    <section class="operation">
+        <input type="image"  alt="Convert from foreign to local"
+               src="img/arrows-left.png" onclick="foreignToLocal();">
+        <input type="image" alt="Convert from local to foreign"
+               src="img/arrows-right.png" onclick="localToForeign();">
+    </section>
+    <section>
+        <h3>Currency I want</h3>
+        <p>
+            <input type="text" id="foreignAmount" size="15" value="">
+            <select id="foreignExchange">
+                <option value="eur">EUR</option>
+                <option value="usd">USD</option>
+            </select>
+        </p>
+    </section>
+</main>
+
+<script>
+    /*
+    Aufgabenstellung -
+    1. Legen Sie das JavaScript als externe Datei an und importieren es in die index.html
+    2. Programmieren Sie Devisen-Umrechnung der lokalen Währung (z.B. CHF) zur Zielwährung (z.B. EUR)
+    3. Fügen Sie noch eine weitere Zielwährung hinzu (z.B. USD)
+    4. Programmieren Sie Devisen-Umrechnung der Zielwährung (z.B. EUR oder USD) in die lokale Währung (z.B. CHF)
+     */
+
+    //Variablen und Konstanten
+    //??
+
+    // aus https://www1.oanda.com/currency/converter/
+    //Umrechnungswert CHF -> EUR
+    let CHF_EUR = 0.92901;
+    //??
+
+    //Formular-Werte z.B. mit document.getElementById auslesen
+    let locAm=document.getElementById("localAmount");
+    //usw.
+
+    /* Multipliziert den Betrag mit dem Umwandlungskurs resp. Währungskurs */
+    function convert(betrag, kurs) {
+        //??
+    }
+
+
+    /**
+     *  von CHF nach Fremdwährung
+     */
+    function localToForeign() {
+        /* Ist Ausgangswährung CHF dann ... */
+        //??
+            /* ... und die Zielwährung EUR dann ... */
+            //??
+                /* ... rufe die Funktion auf zur Berechnung des CHF->EUR-Kurses  */
+                //??
+
+            /* ... und die Zielwährung USD dann ... */
+            //??
+                /* ... rufe die Funktion auf zur Berechnung des CHF->USD-Kurses  */
+                //??
+    }
+
+    /**
+     *  von Fremdwährung nach CHF
+     */
+
+    function foreignToLocal() {
+        /* Ist Zielwährung CHF dann ... */
+        //??
+            /* ... und die Ausgangswährung EUR dann ... */
+            //??
+                /* ... rufe die Funktion auf zur Berechnung des EUR->CHF-Kurses  */
+                //??
+
+            /* ... und die Zielwährung USD dann ... */
+            //??
+                /* ... rufe die Funktion auf zur Berechnung des USD->CHF-Kurses  */
+                //??
+    }
+
+
+</script>
+
+</body>
+</html>
