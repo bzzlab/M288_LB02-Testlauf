@@ -1,0 +1,23 @@
+{
+  "name": "m288",
+  "version": "1.0.0",
+  "description": "JavaScript Bootcamp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Mediamatiker",
+    "M288",
+    "javascript",
+    "oop"
+  ],
+  "author": "daniel.garavaldi@bzz.ch",
+  "license": "ISC",
+  "dependencies": {
+    "esm": "^3.2.25",
+    "express-useragent": "^1.0.15",
+    "moment": "^2.27.0",
+    "request-ip": "^2.1.3"
+  }
+}
