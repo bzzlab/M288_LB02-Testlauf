@@ -9,11 +9,11 @@ Tipp: Die Funktion parseInt konvertiert einen String in eine Zahl um.
 Mögliche Szenarien:
 $ node a02.js
 
-$ node a02-sol.js 800 -500
+$ node a02.js 800 -500
 Saldoverlauf +800
 Saldoverlauf +300
 
-$ node a02-sol.js 1200 -300 -1400 200 -120 -400 5000
+$ node a02.js 1200 -300 -1400 200 -120 -400 5000
 Saldoverlauf +1200
 Saldoverlauf +900
 Konto wurde um -500 überzogen.

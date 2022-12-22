@@ -5,12 +5,12 @@ Halten Sie sich für die Umsetzung an die Kommentare.
 Als Lösung geben Sie den Programmcode zwischen Begin und End ab.
 
 Mögliche Szenarien:
-$ node a03-sol.js
+$ node a03.js
 Bankomat: Herzlich Willkommen:
 Möchten Sie Geld abheben (1) oder verlassen (RETURN):
 Keine Wahl getroffen. Sie sind abgemeldet!
 
-$ node a03-sol.js
+$ node a03.js
 Bankomat: Herzlich Willkommen:
 Möchten Sie Geld abheben (1) oder verlassen (RETURN): 1
 Ihr aktueller Kontostand ist 1200.
@@ -19,7 +19,7 @@ Ihr aktueller Kontostand ist 900.
 Auf wiedersehen!
 
 
-$ node a03-sol.js
+$ node a03.js
 Bankomat: Herzlich Willkommen:
 Möchten Sie Geld abheben (1) oder verlassen (RETURN): 1
 Ihr aktueller Kontostand ist 1200.
