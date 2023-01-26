@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Grössen auswählen (statisch)</title>
+</head>
+<body>
+
+<h2>Grössen auswählen</h2>
+<form>
+    <p>Grösse auswählen: </p>
+    <input type="radio" id="38" name="size" value="38" checked>
+    <label for="38">38</label><br>
+    <input type="radio" id="39" name="size" value="39">
+    <label for="39">39</label><br>
+    <input type="radio" id="40" name="size" value="40">
+    <label for="40">40</label><br>
+    <div style="margin-bottom: 1rem"></div>
+    <input type="button" onclick="getSize('size')" value="Grösse wählen">
+</form>
+<h2>Sie haben gewählt:</h2>
+<p id="basket"></p>
+
+
+<script>
+/*
+Aufgabe: Grössen-Auswahl (statisch) erzeugen
+Ergänzen Sie die mit ?? gekennzeichneten Lücken, um das Formular mit Radiobuttons und
+Labels für die Grössenwahl zu erstellen.
+Als Lösung geben Sie den Programmcode zwischen Begin und End ab.
+Beispiel siehe a05-sol.mp4
+*/
+//--Begin
+    function getSize(name) {
+        //p-Element basket der gleichnamigen Variablen zu weisen
+        let basket = document.getElementById("basket");//??
+        //input-Elemente type radio Variablen sizeList zu weisen
+        let sizeList = document.getElementsByName(name);//??
+        //Text für gewählt Grösse setzen
+        let text = "";
+        if(sizeList[0].checked) {
+            //Text: Grösse sizeList[0].value gewählt.
+            text = `Grösse ${sizeList[0].value} gewählt.`;//??
+        }
+        else if(sizeList[1].checked) {
+            //Text: Grösse sizeList[1].value gewählt.
+            text = `Grösse ${sizeList[1].value} gewählt.`;//??
+        }
+        else if(sizeList[2].checked) {
+            //Text: Grösse sizeList[2].value gewählt.
+            text = `Grösse ${sizeList[2].value} gewählt.`;//??
+        }
+        basket.innerHTML = text;
+    }
+//--End
+</script>
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Grössen auswählen (dynamisch)</title>
+</head>
+<body>
+<h2>Grössen auswählen</h2>
+<form id="sizeForm"></form>
+<h2>Sie haben gewählt:</h2>
+<p id="basket"></p>
+
+<script src="a06-app.js"></script>
+<script>
+    //formEl mit querySelector zuweisen
+    let formEl = document.querySelector('#sizeForm');
+    let sizeArray = [38,39,40,42,43];
+    //Aufruf generateSizeForm mit formEl und sizeArray
+    generateSizeForm(formEl, sizeArray);
+</script>
+</body>
+</html>

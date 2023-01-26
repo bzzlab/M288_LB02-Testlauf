@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Try to click me</title>
+</head>
+<body>
+<div id="myb">
+    <input type="button" id="btnClick" value="Click me if you can!!" />
+</div>
+
+<script type="text/javascript">
+    /*
+    Aufgabe: Try to click me
+    Ergänzen Sie die mit ?? gekennzeichneten Lücken, um die Position des Buttons
+    beim Mouseover zu verändern. Halten Sie sich für die Umsetzung an die Kommentare.
+    Als Lösung geben Sie den Programmcode zwischen Begin und End ab.
+    Beispiel: a04-sol.mp4
+    */
+
+    //--Begin
+    //Input-Element btnClick dem Objekt btn zuweisen
+    let btn = document.getElementById("btnClick");//??
+    //Dem Objekt btn den EventListener für das Click-Ereignis hinzufügen
+    btn.addEventListener("click", () => {//??
+        //Objekt btn Wert und Style setzen
+        btn.value = "You caught me!"
+        btn.style.background="red";
+    });
+    //Dem Objekt btn den EventListener für das Mouseover-Ereignis hinzufügen
+    btn.addEventListener("mouseover", () => {//??
+        //Div-Element myb dem Objekt divEl zuweisen
+        let divEl = document.getElementById("myb");//??
+        //per Zufallsgenerator Position myb ändern
+        divEl.style.left=(Math.random() * 300.0).toString()+"px";
+        divEl.style.top=(Math.random() * 200.0).toString()+"px";
+        divEl.style.position="absolute";
+    });
+    //--End
+
+</script>
+</body>
+</html>
